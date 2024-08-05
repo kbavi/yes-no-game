@@ -14,6 +14,7 @@ The Yes/No Game is a simple yet engaging interactive game where players must ans
 5. [REST API Documentation](#rest-api-documentation)
 6. [Installation](#installation)
 7. [Running the Project](#running-the-project)
+8. [Possible Improvements](#possible-improvements)
 
 ## Project Structure
 
