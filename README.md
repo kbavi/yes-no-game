@@ -7,64 +7,13 @@ The Yes/No Game is a simple yet engaging interactive game where players must ans
 
 ## Table of Contents
 
-1. [Project Structure](#project-structure)
-2. [API Documentation](#api-documentation)
-3. [Architecture Diagram](#architecture-diagram)
-4. [Schema](#schema)
-5. [Request Flow](#request-flow)
-7. [Installation](#installation)
-8. [Running the Project](#running-the-project)
-9. [Possible Improvements](#possible-improvements)
-
-## Project Structure
-
-```
-my-project/
-│
-├── backend/
-│   ├── Dockerfile
-│   ├── package.json
-│   ├── tsconfig.json
-│   ├── src/
-│   │   ├── index.ts
-│   │   ├── models/
-│   │   │   └── conversation.ts
-│   │   ├── routes/
-│   │   │   └── conversation.ts
-│   │   └── services/
-│   │       └── flaskService.ts
-│
-├── python-server/
-│   ├── Dockerfile
-│   ├── requirements.txt
-│   └── app.py
-│
-├── docker-compose.yml
-├── .env
-```
-
-### Description
-
-- **backend/**: Contains the Node.js server code written in TypeScript.
-  - **Dockerfile**: Dockerfile for building the Node.js server image.
-  - **package.json**: NPM dependencies.
-  - **tsconfig.json**: TypeScript configuration.
-  - **src/**: Source code for the Node.js server.
-    - **index.ts**: Entry point of the Node.js server.
-    - **models/**: Mongoose models.
-      - **conversation.ts**: Schema for the conversation documents.
-    - **routes/**: Express routes.
-      - **conversation.ts**: Routes for conversation-related endpoints.
-    - **services/**: Services for interacting with the Flask server.
-      - **flaskService.ts**: Service for querying the Flask server.
-
-- **python-server/**: Contains the Flask server code.
-  - **Dockerfile**: Dockerfile for building the Flask server image.
-  - **requirements.txt**: Python dependencies.
-  - **app.py**: Main Flask application code.
-
-- **docker-compose.yml**: Docker Compose file for orchestrating the services.
-- **.env**: Environment variables for the project.
+1. [API Documentation](#api-documentation)
+2. [Architecture Diagram](#architecture-diagram)
+3. [Schema](#schema)
+4. [Request Flow](#request-flow)
+5. [Installation](#installation)
+6. [Running the Project](#running-the-project)
+7. [Possible Improvements](#possible-improvements)
 
 ## API Documentation
 https://www.postman.com/avinashb98/workspace/kbavi
