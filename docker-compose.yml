@@ -22,7 +22,6 @@ services:
       - redis
     environment:
       - REPLICATE_API_TOKEN=${REPLICATE_API_TOKEN}
-      - SESSION_SECRET=${SESSION_SECRET}
       - LLAMA2_MODEL_PATH=${LLAMA2_MODEL_PATH}
       - MISTRAL_MODEL_PATH=${MISTRAL_MODEL_PATH}
       - REDIS_HOST=redis

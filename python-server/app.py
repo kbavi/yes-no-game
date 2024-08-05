@@ -11,7 +11,6 @@ r = redis.Redis(host=redis_host, port=redis_port, decode_responses=True)
 os.environ["REPLICATE_API_TOKEN"] = os.getenv("REPLICATE_API_TOKEN")
 
 app = Flask(__name__)
-app.secret_key = os.getenv("SESSION_SECRET")
 CORS(app)
 
 def generate_text(model_path, prompt, max_length=10):
