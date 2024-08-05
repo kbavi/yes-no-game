@@ -8,13 +8,13 @@ The Yes/No Game is a simple yet engaging interactive game where players must ans
 ## Table of Contents
 
 1. [Project Structure](#project-structure)
-2. [Architecture Diagram](#architecture-diagram)
-3. [Schema](#schema)
-4. [Request Flow](#request-flow)
-5. [REST API Documentation](#rest-api-documentation)
-6. [Installation](#installation)
-7. [Running the Project](#running-the-project)
-8. [Possible Improvements](#possible-improvements)
+2. [API Documentation](#api-documentation)
+3. [Architecture Diagram](#architecture-diagram)
+4. [Schema](#schema)
+5. [Request Flow](#request-flow)
+7. [Installation](#installation)
+8. [Running the Project](#running-the-project)
+9. [Possible Improvements](#possible-improvements)
 
 ## Project Structure
 
@@ -65,6 +65,11 @@ my-project/
 
 - **docker-compose.yml**: Docker Compose file for orchestrating the services.
 - **.env**: Environment variables for the project.
+
+## API Documentation
+https://www.postman.com/avinashb98/workspace/kbavi
+
+[<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://god.gw.postman.com/run-collection/2815732-09ca64a4-9280-451c-9e3e-1e9d9132a681?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D2815732-09ca64a4-9280-451c-9e3e-1e9d9132a681%26entityType%3Dcollection%26workspaceId%3D80d1a525-1ac6-4418-809c-51cd8df2044a)
 
 ## Architecture Diagram
 
@@ -117,79 +122,6 @@ conversation_id: [
 3. The **Flask Server** generates a response using the specified model and updates the conversation history in **Redis**.
 4. The **Flask Server** returns the response and updated conversation ID to the **Node.js Backend**.
 5. The **Node.js Backend** stores the prompt, response, and conversation ID in **MongoDB** and sends the response back to the **Client**.
-
-## REST API Documentation
-
-### Backend (Node.js) Endpoints
-
-- **POST /conversations/query**
-  - Description: Send a query to the specified model and get a response.
-  - Request Body:
-    ```json
-    {
-      "model_name": "string",
-      "prompt": "string",
-      "conversation_id": "string"
-    }
-    ```
-  - Response:
-    ```json
-    {
-      "response": "string",
-      "conversation_id": "string"
-    }
-    ```
-
-- **GET /conversations**
-  - Description: List all conversations.
-  - Response:
-    ```json
-    [
-      {
-        "_id": "string",
-        "model_name": "string",
-        "prompt": "string",
-        "response": "string",
-        "timestamp": "Date",
-        "conversation_id": "string"
-      }
-    ]
-    ```
-
-- **GET /conversations/:id**
-  - Description: Get details of a specific conversation.
-  - Response:
-    ```json
-    {
-      "_id": "string",
-      "model_name": "string",
-      "prompt": "string",
-      "response": "string",
-      "timestamp": "Date",
-      "conversation_id": "string"
-    }
-    ```
-
-### Flask Server Endpoints
-
-- **POST /query**
-  - Description: Query the specified model and get a response.
-  - Request Body:
-    ```json
-    {
-      "model_name": "string",
-      "pre_prompt": "string",
-      "message": "string",
-      "conversation_id": "string"
-    }
-    ```
-  - Response:
-    ```json
-    {
-      "response": "string",
-      "conversation_id": "string"
-    }
-    ```
 
 
 ## Installation
