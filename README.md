@@ -124,12 +124,17 @@ conversation_id: [
 5. The **Node.js Backend** stores the prompt, response, and conversation ID in **MongoDB** and sends the response back to the **Client**.
 
 
+## Prerequisites
+1. Create a [Replicate](https://replicate.com/) account and obtain an API token.
+
 ## Installation
+
+
 
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/kbavi/yesnogame.git
+   git clone https://github.com/kbavi/yes-no-game.git
    cd yesnogame
    ```
 
@@ -144,11 +149,10 @@ conversation_id: [
    ```env
    BACKEND_PORT=3000
    MONGO_PORT=27017
-   FLASK_PORT=5000
+   FLASK_PORT=5050
    REPLICATE_API_TOKEN=your_replicate_api_token_here
-   SESSION_SECRET=your_secret_key
-   LLAMA2_MODEL_PATH=replicate/llama2_url_on_replicate
-   MISTRAL_MODEL_PATH=replicate/mistral_url_on_replicate
+   LLAMA2_MODEL_PATH=meta/llama-2-7b-chat
+   MISTRAL_MODEL_PATH=mistralai/mistral-7b-instruct-v0.2
    ```
 
 ## Running the Project
