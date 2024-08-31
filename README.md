@@ -2,7 +2,7 @@
 
 # Yes and No Game
 
-The Yes/No Game is a simple yet engaging interactive game where players must answer a series of questions without saying "Yes" or "No". The goal is to respond to each question creatively while avoiding these two forbidden words. The game can be played individually or with multiple players, and it typically ends when a player accidentally says "Yes" or "No". It's a fun way to challenge quick thinking, vocabulary skills, and concentration. Ideal for parties, family gatherings, or just a quick, entertaining break.
+The Yes/No Game is a simple yet engaging interactive game where players must guess a story based on a part of the story given to them. The goal is to ask a series of yes/no questions and logicaly arrive at the main story. The game can be played individually or with multiple players, and it typically ends when a player successfully guesses the entire story. It's a fun way to challenge quick thinking, vocabulary skills, and concentration. Ideal for parties, family gatherings, or just a quick, entertaining break.
 
 
 ## Table of Contents
